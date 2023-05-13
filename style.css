@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,500;0,700;1,300&display=swap');
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 body {
@@ -14,6 +16,12 @@ body {
     overflow: hidden;
     font-size: 10px;
     font-family: sans-serif;
+    background-color: #112233;
+}
+
+#phrase {
+    color: white;
+    font-size: 2rem;
 }
 
 .container {
@@ -48,12 +56,18 @@ body {
     bottom: 20px;
     font-weight: lighter;
     opacity: 0;
+    color: #fff;
+    font-weight: 200;
+    /* background-color: rgb(0, 255, 13); */
+    background-color: rgba(0, 0, 0, 0.65);
+    border-radius: 1rem;
+    padding: .5rem;
 }
 
 .panel.active {
     flex: .4;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-    transition: 1s ease-in;
+    transition: .5s ease-in;
 }
 
 .panel.active h3 {
